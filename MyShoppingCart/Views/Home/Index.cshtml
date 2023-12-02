@@ -1,0 +1,46 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+	Layout = "_AdminLayout";
+}
+
+<!-- End Header/Navigation -->
+@* @{
+	
+	await Html.RenderPartialAsync("_Hero");
+
+} *@
+@section DashboardView{
+	<partial name="_RightCardView">
+		
+}
+
+@section SalesCard{
+		<partial name="_SalesCard">
+	    <partial name="_RevenueCard">
+		}
+@section RevenueCard{
+			
+			}
+@* @section CustomersCard{
+				} *@
+			<partial name="_CustomersCard">
+
+@section ReportsCard{
+					<partial name="_ReportsCard">
+					}
+@section RecentSalesCard{
+	<partial name="_RecentSalesCard">
+			}
+@section TopSellingCard{
+	<partial name="_TopSellingCard">
+				}
+
+@* @section CSS{
+		<style>
+			* {
+				color: blue !important;
+			}
+		</style>
+	} 
+
+ *@

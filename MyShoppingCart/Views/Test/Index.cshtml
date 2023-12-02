@@ -1,0 +1,34 @@
+﻿@model List<string>
+
+
+@{
+    //string company = ViewBag.obj;
+    DateTime now = ViewBag.Now;
+    ViewData["Title"] = "This is my test page";
+    string companyName = ViewData["Company"].ToString();
+    // List<string> names = new List<string>();
+    // names.Add("John");
+    // names.Add("Alex");
+    // names.Add("James");
+    // names.Add("Bernice");
+    // names.Add("Mary");
+}
+
+<h1>The date is @now</h1>
+
+
+@foreach(var item in Model)
+{
+    @: My name is @item 
+}
+@foreach(var item in Model)
+{
+    <text> My name is
+        <br> @item
+    </text>
+}
+@foreach(var item in Model)
+{
+    @: My name is @item 
+}
+
